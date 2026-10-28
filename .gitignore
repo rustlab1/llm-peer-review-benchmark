@@ -17,3 +17,6 @@ _*runs*/
 *.jsonl
 *.docx
 *.pdf
+anthropic_key.txt
+work_further_trials/
+Supplementary_Data_1/

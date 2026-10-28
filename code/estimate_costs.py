@@ -1,4 +1,4 @@
-"""Estimated cost of one review for all 15 models, at list prices (Supplementary Table 3).
+"""Estimated cost of one review for all 15 models, at list prices (Supplementary Table 4).
 
 One uniform estimate for every model, so that models run through different software can be compared:
   cost = 10,000 input tokens x input price + output tokens x output price

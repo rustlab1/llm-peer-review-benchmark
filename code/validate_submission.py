@@ -97,6 +97,7 @@ if supp.exists():
     exp=None;checked=0
     for row in d.tables[1].rows[2:]:
         ss=[c.text for c in row.cells]
+        if ss[0] and ss[0] not in ('2004 test papers','2026 trials'):break  # 58-trial block: see code/further_trials/
         if ss[0]:exp='exp1' if ss[0]=='2004 test papers' else 'exp2'
         label=ss[1];m=LABEL[label];e=v2[exp][m]
         for col,key,ci,dp in [(2,'major_mean','major_ci_clustered',2),(3,'minor_mean','minor_ci_clustered',2),(4,'sens_all','sens_all_ci',1),(5,'spec_all','spec_all_ci',1)]:

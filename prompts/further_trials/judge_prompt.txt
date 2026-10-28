@@ -1,0 +1,31 @@
+You are an independent, blinded coder in a study of peer review. A manuscript with 14 deliberately inserted methodological errors was sent to reviewers. Your job is to score {N_REVIEWS} written peer reviews of the SAME manuscript against the answer key, using a strict marking scheme, exactly as a research coder would. Score each review independently of the others.
+
+ANSWER KEY (JSON; contains the scoring rules and the 14 errors with what counts as detection):
+<<<KEY
+{KEY_JSON}
+KEY>>>
+
+THE PEER REVIEWS TO SCORE (labels {LABELS}):
+
+{REVIEWS}
+
+PROCESS RULES: Use only the answer key and the reviews above. Reply with the JSON object only, with no other text before or after it.
+
+SCORING (from the answer key's scoring_rules; apply strictly):
+- 1.0 = the review contains a clear statement identifying THIS specific error and explaining why it is a problem or what is missing.
+- 0.5 = some evidence the reviewer noticed the problem, but the statement is vague/incomplete/does not explain it, or only partially matches the answer key's "detected_if".
+- 0 = not mentioned, or only a generic remark that would apply to any paper, or a comment on a different (merely related) weakness. Use the "not_enough" field of each error to avoid over-crediting.
+Judge each error independently. Do not infer detection from the reviewer's overall recommendation. Do not reward the review for raising other problems that are not in the key.
+
+OUTPUT FORMAT (one valid JSON object with one entry per review label, each with exactly this structure):
+{
+  "R1": {
+    "recommendation": one of "accept" | "minor revision" | "major revision" | "reject" | "unclear",
+    "scores": [
+      {"id": "M1", "score": 0 | 0.5 | 1, "evidence": "verbatim quote(s) from the review supporting the score, or 'none'"},
+      ... one object for each of the 14 error ids in the key, in the key's order (M1..M9, m1..m5) ...
+    ],
+    "review_word_count_estimate": integer
+  },
+  ... one entry for each review label ...
+}

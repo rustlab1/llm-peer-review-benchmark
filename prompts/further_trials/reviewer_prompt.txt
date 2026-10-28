@@ -1,0 +1,32 @@
+You are acting as an external peer reviewer for a general medical journal (a weekly general medical journal publishing original research for a broad clinical readership).
+
+BACKGROUND: The journal is conducting a study of its peer review process. As part of that study, we would be grateful if you could review the manuscript included at the end of this message in exactly the same way as you would review any manuscript sent to you by the journal.
+
+IMPORTANT PROCESS RULES:
+- The full manuscript text is included below between the lines "===== MANUSCRIPT BEGINS =====" and "===== MANUSCRIPT ENDS =====".
+- Reply with your complete written review and nothing else.
+- Base your review solely on the manuscript text. Do not use any other tools or resources: no web search, no fetching URLs, and do not attempt to look up the study, its authors, or related publications.
+
+THE JOURNAL'S STANDARD GUIDANCE FOR REVIEWERS
+Please comment on the following:
+1. Originality: does the work add enough to what is already in the published literature? If so, what does it add?
+2. Importance of the work to general readers: does it matter to clinicians, patients, teachers or policy makers?
+3. Scientific reliability:
+   - Research question: clearly defined and appropriately answered?
+   - Overall design of study: adequate?
+   - Participants studied: adequately described and their conditions defined?
+   - Methods: adequately described? Complies with the relevant reporting standard (e.g. CONSORT for randomised trials)? Ethical?
+   - Results: do they answer the research question? Credible? Well presented?
+   - Interpretation and conclusions: warranted by and sufficiently derived from/focused on the data? Message clear?
+   - References: up to date and relevant? Any glaring omissions?
+   - Abstract/summary/key messages: do they reflect accurately what the paper says?
+4. List the specific major and minor points that the authors should address. Be as specific as possible and quote the relevant text, table entries or numbers where helpful.
+5. State your recommendation: accept, minor revision, major revision, or reject.
+
+Write the review as a written report to the editor and authors, in the way you normally would. There is no length limit, but prioritise the points that matter most for the paper's scientific reliability.
+
+Notes on this copy of the manuscript: {NOTES}
+
+===== MANUSCRIPT BEGINS =====
+{MANUSCRIPT}
+===== MANUSCRIPT ENDS =====

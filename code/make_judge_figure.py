@@ -25,7 +25,7 @@ NAME = {"haiku": "Haiku 4.5", "sonnet": "Sonnet 5", "opus": "Opus 5", "fable": "
         "gpt54": "GPT-5.4", "gpt55": "GPT-5.5", "opus55": "Opus 5.5", "gpt61sol": "GPT-6.1 Sol", "gpt6luna": "GPT-6 Luna",
         "gemini38fl": "Gemini 3.8 Flash", "kimik3": "Kimi K3", "dsv4pro": "DeepSeek V4 Pro", "qwen38_27b": "Qwen3.8-27B",
         "gptoss120b": "gpt-oss-120b"}
-BLUE, RED = "#2F5597", "#C9452C"
+BLUE, RED = "#4F6375", "#C47885"   # slate (proprietary), rose (open-weight)
 INK, INK2, RULE = "#1A1A1A", "#4D4D4D", "#D9D9D9"
 plt.rcParams.update({"font.family": ["Arial", "Helvetica", "Liberation Sans", "DejaVu Sans"], "font.size": 8,
                      "axes.labelsize": 8, "xtick.labelsize": 7.5, "ytick.labelsize": 8, "legend.fontsize": 7.5,

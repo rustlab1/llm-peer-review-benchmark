@@ -6,7 +6,7 @@ of the timing (their printed time includes the failed attempts and back-off), bu
 successful request. Requests that failed in one pass and succeeded at the first attempt of a later pass are timed from
 that successful request. Opus 5.5: cost at list price and duration as reported by Claude Code for each session
 (logs/claude_code_runs_opus55/exp*/manifest.json, field "audit").
-Statistics are over the 12 reviews of the error-seeded 2026 trials, as in Supplementary Table 3.
+Statistics are over the 12 reviews of the error-seeded 2026 trials, as in Supplementary Table 4.
 Writes data/cost_time_new_models.json.   Run: python3 code/summarize_session_costs.py
 """
 import glob, json, os, re, statistics as st
